@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omesha Dulanjalee</title>
   <link href="img/O-logo.png" rel="icon">
-  <link href="{{ asset('cssjs/omesha.css') }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -34,6 +33,993 @@
             }
 
         }
+
+        
+/* ------------------Onscroll animations----------------- */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* ----------------Mobile Navigation------------------- */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 93%;
+  top: 15px;
+  border: 0;
+  transition: all 0.4s;
+  outline: none;
+  color: #ffffff;
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 50;
+  padding: 0% 1% 0% 1%;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    display: inline-flex;
+    padding: 0% 0.5% 0% 0.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    right: 90%;
+    padding: 0% 1% 0% 1%;
+  }
+}
+
+
+/*------------------------Navigation Menu----------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 17px;
+  margin-left: 5px;
+}
+.nav-menu a svg {
+  margin-right: 5%;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover svg,
+.nav-menu .active svg,
+.nav-menu .active:focus svg,
+.nav-menu li:hover>a svg {
+  color: #149ddd;
+}
+
+/* ----------------------header-------------------------- */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.close-icon {
+  position: fixed;
+  right: 80%;
+  top: 15px;
+  border: 0;
+  transition: all 0.4s;
+  outline: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 130px;
+  border: 8px solid #2c2f3f;
+  border-radius: 100%;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  .close-icon {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 1180px) {
+  .close-icon {
+    left: -300px;
+  }
+
+}
+
+
+/*--------------------Summary Section----------------------*/
+
+#summary:before {
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#summary .summary-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#summary h1 {
+  margin: 0px 0px 10px 0px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #000000;
+  margin-top: 10%;
+  margin-left: 22%;
+
+}
+
+#summary h1 img {
+  height: 10%;
+  width: 10%;
+}
+
+#summary p {
+  color: #000000;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 27%;
+}
+
+#summary p span {
+  color: #000000;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+typed::after {
+  content: "|";
+  animation: blink-caret 0.7s infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+.cv-download {
+  color: #000000;
+  font-size: 26px;
+  margin-left: 25%;
+  width: 320px;
+  text-align: center;
+  text-decoration: none;
+  padding: 1%;
+  background-color: #37b3ed;
+  border-radius: 20px;
+}
+
+.cv-download:hover {
+  color: #ffffff;
+  background-color: #0d99da;
+}
+
+.download {
+  margin-right: 5%;
+}
+
+
+
+@media (max-width: 1199px) {
+  #summary h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #000000;
+    margin-top: 10%;
+    margin-left: 10%;
+
+  }
+}
+
+@media (max-width: 900px) {
+  #summary h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #000000;
+    margin-top: 10%;
+    margin-left: 0%;
+  }
+
+  .cv-download {
+    font-size: 16px;
+    margin-left: 18%;
+    width: 35%;
+  }
+  #summary p {
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10%;
+    font-weight: 500;
+    color: #000000;
+  }
+  .cv-download {
+    font-size: 16px;
+    margin-left: 5%;
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  #summary h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #000000;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+
+  #summary h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .summary-container h1 img {
+    width: 20%;
+    height: 20%;
+  }
+
+ 
+
+  #summary p {
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 15%;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  #summary p span {
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .cv-download {
+    font-size: 16px;
+    margin-left: 5%;
+    width: 45%;
+  }
+}
+
+
+/*------------Sections General------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.details {
+  margin-top: 5%;
+}
+
+
+/*----------------------About-----------------------*/
+.about {
+  padding: 4% 2%;
+  margin-top: 5%;
+}
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+  text-align: center;
+}
+
+.about .content h5 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul svg {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+#second-pic {
+  margin-top: 30px;
+}
+
+@media (max-width: 1199px) {
+  .second-pic {
+    margin-top: 12%;
+  }
+}
+
+/*----------------------Skills---------------------*/
+.skills {
+  padding: 4% 2%;
+  margin-top: 5%;
+  background-color: #ebf2f5;
+}
+
+.skills-content {
+  display: flex;
+}
+
+.skills .progress-box {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress-box .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  font-size: 80%;
+}
+
+.skills .progress-box .skill .value {
+  float: right;
+  font-style: normal;
+  margin-right: 5%;
+}
+
+.progress-bar {
+  width: 95%;
+  height: 8px;
+  margin-top: 10px;
+  border: 1px solid #565656;
+  border-radius: 5px;
+}
+
+.percentage1,
+.percentage2,
+.percentage3,
+.percentage4,
+.percentage5,
+.percentage6,
+.percentage7,
+.percentage8,
+.percentage9,
+.percentage10,
+.percentage11,
+.percentage12 {
+  display: block;
+  height: 100%;
+  background-color: #149ddd;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.percentage1 {
+  width: 60%;
+}
+
+.percentage2 {
+  width: 65%;
+}
+
+.percentage3 {
+  width: 50%;
+}
+
+.percentage4 {
+  width: 40%;
+}
+
+.percentage5 {
+  width: 40%;
+}
+
+.percentage6 {
+  width: 45%;
+}
+
+.percentage7 {
+  width: 50%;
+}
+
+.percentage8 {
+  width: 45%;
+}
+
+.percentage9 {
+  width: 40%;
+}
+
+.percentage10 {
+  width: 35%;
+}
+
+.percentage11 {
+  width: 40%;
+}
+
+.percentage12 {
+  width: 65%;
+}
+
+@media (max-width: 991px) {
+  .skills-content {
+    flex-direction: column;
+  }
+}
+
+
+/*---------------------------Education--------------------*/
+.education {
+  padding: 4% 2%;
+  margin-top: 5%;
+}
+
+.education .education-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.education .education-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.education .education-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.education .education-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.education .education-item ul {
+  padding-left: 20px;
+}
+
+.education .education-item ul li {
+  padding-bottom: 10px;
+}
+
+.education .education-item:last-child {
+  padding-bottom: 0;
+}
+
+.education .education-item::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+
+
+/*---------------------Achievements-------------------*/
+.achievements {
+  padding: 4% 2%;
+  margin-top: 5%;
+  background-color: #ebf2f5;
+}
+
+.achievements .achievements-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.achievements .achievements-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.achievements .achievements-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.achievements .achievements-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.achievements .achievements-item ul {
+  padding-left: 20px;
+}
+
+.achievements .achievements-item ul li {
+  padding-bottom: 10px;
+}
+
+.achievements .achievements-item:last-child {
+  padding-bottom: 0;
+}
+
+.achievements .achievements-item::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+
+
+
+/*--------------------- Projects----------------------------*/
+.projects {
+  padding: 4% 2%;
+  margin-top: 5%;
+}
+
+.projects .icon-box {
+  margin-top: 5%;
+}
+
+.projects .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+h4 svg {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #149ddd;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #149ddd;
+  color: #ffffff;
+  padding: 7px;
+  margin-right: 3%;
+}
+
+h4 svg:hover {
+  background: #fff;
+  color: #149ddd;
+}
+
+.projects .title a {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.projects .title a:hover {
+  color: #149ddd;
+}
+
+.projects .description {
+  margin-left: 150px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .projects .description {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .projects .description {
+    margin-left: 0px;
+  }
+
+  .projects .title {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+}
+
+ /* -------------------Contact---------------------- */
+
+.contact {
+  padding: 4% 2% 10% 4%;
+  margin-top: 5%;
+  background-color: #ebf2f5;
+}
+
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info svg {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .info .email:hover svg,
+.contact .info .address:hover svg,
+.contact .info .phone:hover svg {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .email-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .email-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .email-form label {
+  padding-bottom: 8px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .email-form input {
+  height: 44px;
+}
+
+.contact .email-form textarea {
+  padding: 10px 15px;
+}
+
+.contact .email-form button[type=submit] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .email-form button[type=submit]:hover {
+  background: #37b3ed;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
     </style>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -691,9 +1677,8 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch reveal">
-            <form id="myForm" action="{{ route('send_mail') }}" method="POST"
-            enctype="multipart/form-data"class="email-form">
-            @csrf
+            <form id="myForm" action="https://formsubmit.co/dulanjaleeomesha2000@gmail.com" method="post" role="form"
+              class="email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -763,7 +1748,139 @@
   </script>
 
 
-  <script src="{{ asset('cssjs/omesha.js') }}"></script>
+  <script>
+      
+//-------------animation when scrolling----------------
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);
+
+
+
+//---------------mobile nav toggle-----------------------
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('header');
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const closeicon = document.querySelector('.close-icon');
+
+    // Toggle header display
+    function toggleHeaderPosition() {
+        const currentTransform = window.getComputedStyle(header).getPropertyValue('transform');
+        const isHeaderShifted = currentTransform === 'matrix(1, 0, 0, 1, 300, 0)';
+        
+        header.style.transform = isHeaderShifted ? 'translateX(0)' : 'translateX(300px)';
+        closeicon.style.display = 'inline-flex'
+        closeicon.style.transform = isHeaderShifted ? 'translateX(0)' : 'translateX(320px)';
+    }
+
+    // Toggle header close
+    function toggleHeaderClose() {
+        const currentTransform = window.getComputedStyle(header).getPropertyValue('transform');
+        const isHeaderShifted = currentTransform === 'matrix(1, 0, 0, 1, 300, 0)';
+
+        header.style.transform = isHeaderShifted ? 'translateX(0)' : 'translateX(-300px)';
+    }
+
+    // mobile-nav-toggle click
+    mobileNavToggle.addEventListener('click', toggleHeaderPosition);
+    closeicon.addEventListener('click', toggleHeaderClose)
+
+
+    // clicks outside of the navbar
+    document.body.addEventListener('click', function (event) {
+        const isClickInsideNavbar = document.querySelector('.navbar').contains(event.target) ||
+        document.querySelector('.mobile-nav-toggle').contains(event.target) ||
+        document.querySelector('.close-icon').contains(event.target);
+
+        if (!isClickInsideNavbar) {
+            // Replace the following lines with the appropriate code to close your navbar
+            // For example, if your navbar has a class 'navbar-collapse', you can use the following:
+            document.querySelector('.navbar-collapse').classList.remove('show');
+        }
+    });
+
+
+    // Check the window width on resize
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 1198) {
+            header.style.transform = 'translateX(0)';
+            closeicon.style.display = 'none'; 
+        } else {
+            closeicon.style.display = 'inline-flex'; 
+        }
+    });
+});
+
+
+//----------menu item click active----------------
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".nav-link");
+
+    function handleLinkClick(event) {
+        links.forEach(function (link) {
+            link.classList.remove("active");
+        });
+        event.target.classList.add("active");
+    }
+
+    links.forEach(function (link) {
+        link.addEventListener("click", handleLinkClick);
+    });
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= window.innerHeight / 2 &&
+            rect.bottom >= window.innerHeight / 2
+        );
+    }
+
+    function handleScroll() {
+        let currentSectionId = "";
+
+        document.querySelectorAll("section").forEach(function (section) {
+            if (isElementInViewport(section)) {
+                currentSectionId = section.id;
+            }
+        });
+
+        links.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        const activeLink = document.querySelector(
+            `.nav-link[href="#${currentSectionId}"]`
+        );
+        if (activeLink) {
+            activeLink.classList.add("active");
+        }
+    }
+    
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+});
+
+
+
+
+
+
+  </script>
 
 </body>
 
