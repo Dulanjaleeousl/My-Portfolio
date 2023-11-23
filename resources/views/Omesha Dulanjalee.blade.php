@@ -463,7 +463,7 @@ section {
 
 /*----------------------About-----------------------*/
 .about {
-  padding: 4% 2%;
+  padding: 4% 1%;
   margin-top: 5%;
 }
 
