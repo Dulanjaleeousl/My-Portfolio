@@ -1084,9 +1084,38 @@ h4 svg:hover {
     });
   </script>
 
+    <script>
+    $(document).ready(function() {
+	
+	// Will wait for everything on the page to load.
+	$(window).bind('load', function() {
+		$('.overlay, body').addClass('loaded');
+		setTimeout(function() {
+			$('.overlay').css({'display':'none'})
+		}, 2000)
+	});
+	
+	// Will remove overlay after 1min for users cannnot load properly.
+	setTimeout(function() {
+		$('.overlay, body').addClass('loaded');
+	}, 60000);
+})
+
+  </script>
+
 </head>
 
 <body>
+
+        <!-- ======= page loader ======= -->
+  <div class="overlay">
+    <div class="overlayDoor"></div>
+    <div class="overlayContent">
+      <div class="loader">
+        <div class="inner"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <svg id="icon1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
