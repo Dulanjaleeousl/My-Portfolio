@@ -515,6 +515,12 @@ section {
     margin-top: 12%;
   }
 }
+@media (max-width: 768px) {
+  .details {
+    margin-top : 0%;
+  }
+}
+
 
 /*----------------------Skills---------------------*/
 .skills {
