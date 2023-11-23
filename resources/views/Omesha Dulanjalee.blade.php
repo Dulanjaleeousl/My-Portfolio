@@ -413,7 +413,7 @@ typed::after {
   .cv-download {
     font-size: 16px;
     margin-left: 5%;
-    width: 45%;
+    width: 55%;
   }
 }
 
