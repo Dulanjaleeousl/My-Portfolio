@@ -16,4 +16,3 @@ use App\Http\Controllers\root;
 */
 
 Route::get('/', [root::class, 'port']);
-Route::post('/send-mail', [MailController::class, 'maildata'])->name('send_mail');
