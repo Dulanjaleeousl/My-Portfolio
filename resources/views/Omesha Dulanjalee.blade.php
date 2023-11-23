@@ -1028,7 +1028,7 @@ h4 svg:hover {
 }
  @media (max-width: 768px) {
   .contact .info {
-    padding: 5px;
+    padding: 30px 15px;
     width: 100%;
   }
 }
