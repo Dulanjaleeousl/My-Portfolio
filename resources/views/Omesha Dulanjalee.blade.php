@@ -1026,6 +1026,12 @@ h4 svg:hover {
     transform: rotate(360deg);
   }
 }
+      @media (max-width: 768px) {
+  .contact .info {
+    padding: 20px;
+    width: 100%;
+  }
+}
     </style>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
