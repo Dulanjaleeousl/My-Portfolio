@@ -88,7 +88,7 @@
 
 @media (max-width: 768px) {
   .mobile-nav-toggle {
-    right: 90%;
+    right: 85%;
     padding: 0% 1% 0% 1%;
   }
 }
