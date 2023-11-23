@@ -1195,7 +1195,7 @@ h4 svg:hover {
       <h1><img src="{{ asset('img/O-logo.png') }}">mesha Dulanjalee</h1>
       <p id="typedText">I'm <span class="typed"></span></p>
     </div>
-    <a class="cv-download" href="Omesha Dulanjalee Resume.pdf" download="Omesha Dulanjalee CV"><svg
+    <a class="cv-download" href="Omesha_Dulanjalee.pdf" download="Omesha Dulanjalee Resume"><svg
         xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-download download"
         viewBox="0 0 16 16">
         <path
