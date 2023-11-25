@@ -1214,7 +1214,7 @@ h4 svg:hover {
 
         <div class="section-title">
           <h2 class="reveal">About</h2>
-          <p class="reveal">&nbsp;&nbsp;&nbsp;&nbsp;Enthusiastic and dedicated undergraduate
+          <p class="reveal">Enthusiastic and dedicated undergraduate
             actively pursuing a Bachelor of Software Engineering degree. As a
             perpetual learner, I am committed to staying abreast of current
             technology trends. My track record demonstrates a knack for generating
@@ -1414,7 +1414,7 @@ h4 svg:hover {
 
         <div class="section-title">
           <h2 class="reveal">Education</h2>
-          <p class="reveal">&nbsp;&nbsp;&nbsp;&nbsp;My educational journey has been characterized by a commitment to
+          <p class="reveal">My educational journey has been characterized by a commitment to
             academic excellence and a passion for technology. I have successfully
             navigated through key milestones, each contributing to my holistic
             understanding of the field.
@@ -1481,7 +1481,7 @@ h4 svg:hover {
 
         <div class="section-title">
           <h2 class="reveal">Achievements</h2>
-          <p class="reveal">&nbsp;&nbsp;&nbsp;&nbsp;I am pleased to showcase the concrete
+          <p class="reveal">I am pleased to showcase the concrete
             results of my unwavering dedication, expertise, and passion.
             Throughout my journey, I have consistently pursued excellence,
             transforming challenges into opportunities and aspirations into
@@ -1644,7 +1644,7 @@ h4 svg:hover {
 
         <div class="section-title">
           <h2 class="reveal">Contact</h2>
-          <p class="reveal">&nbsp;&nbsp;&nbsp;&nbsp;Feel free to reach out! I welcome the opportunity to connect,
+          <p class="reveal">Feel free to reach out! I welcome the opportunity to connect,
             collaborate, and discuss potential avenues for cooperation. Whether
             you have inquiries, opportunities, or simply wish to engage in a
             conversation, my contact information is provided below. I'm open to
