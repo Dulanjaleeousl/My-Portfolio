@@ -1736,7 +1736,7 @@ h4 svg:hover {
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var typedElement = document.querySelector("#typedText .typed");
-      var roles = ["Undergraduate", "a Developer", "a Designer"];
+      var roles = ["an Undergraduate", "a Developer", "a Designer"];
       var index = 0;
 
       function typeWriter(text, i, cb) {
