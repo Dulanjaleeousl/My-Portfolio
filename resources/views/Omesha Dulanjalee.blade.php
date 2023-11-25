@@ -1192,7 +1192,7 @@ h4 svg:hover {
   <!-- ======= Summary Section ======= -->
   <section id="summary" class="d-flex flex-column">
     <div class="summary-container">
-      <h1><img src="{{ asset('img/Om-logo.png') }}">mesha Dulanjalee</h1>
+      <h1>Omesha Dulanjalee</h1>
       <p id="typedText">I'm <span class="typed"></span></p>
     </div>
     <a class="cv-download" href="Omesha Dulanjalee Resume.pdf" download="Omesha Dulanjalee Resume"><svg
