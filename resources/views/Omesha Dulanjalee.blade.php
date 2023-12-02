@@ -547,7 +547,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #173b6c;
   font-size: 80%;
 }
 
